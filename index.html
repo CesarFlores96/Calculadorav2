@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="calculadora">
+        <div class="appbar">
+          <div class="appbar-title">
+            <label for="" style="color: #396bf3; margin: 1rem"
+              >Calculadora</label
+            >
+          </div>
+          <div class="appbar-btn">
+            <button>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-square-minus"
+              >
+                <rect width="18" height="18" x="3" y="3" rx="2" />
+                <path d="M8 12h8" />
+              </svg></button
+            ><button>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-square-x"
+              >
+                <rect width="18" height="18" x="3" y="3" rx="2" ry="2" />
+                <path d="m15 9-6 6" />
+                <path d="m9 9 6 6" />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <input type="text" value="0" id="txtresultado" />
+
+        <button class="numeros" value="7" onclick="InsertarValor(this.value)">
+          7
+        </button>
+        <button class="numeros" value="8" onclick="InsertarValor(this.value)">
+          8
+        </button>
+        <button class="numeros" value="9" onclick="InsertarValor(this.value)">
+          9
+        </button>
+        <button class="simbolos" id="multi" onclick="InsertarValor('X')">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-circle-x"
+          >
+            <circle cx="12" cy="12" r="10" />
+            <path d="m15 9-6 6" />
+            <path d="m9 9 6 6" />
+          </svg>
+        </button>
+        <button class="numeros" value="4" onclick="InsertarValor(this.value)">
+          4
+        </button>
+        <button class="numeros" value="5" onclick="InsertarValor(this.value)">
+          5
+        </button>
+        <button class="numeros" value="6" onclick="InsertarValor(this.value)">
+          6
+        </button>
+        <button class="simbolos" id="resta" onclick="InsertarValor('-')">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-circle-minus"
+          >
+            <circle cx="12" cy="12" r="10" />
+            <path d="M8 12h8" />
+          </svg>
+        </button>
+        <button class="numeros" value="1" onclick="InsertarValor(this.value)">
+          1
+        </button>
+        <button class="numeros" value="2" onclick="InsertarValor(this.value)">
+          2
+        </button>
+        <button class="numeros" value="3" onclick="InsertarValor(this.value)">
+          3
+        </button>
+        <button class="simbolos" id="suma" onclick="InsertarValor('+')">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-circle-plus"
+          >
+            <circle cx="12" cy="12" r="10" />
+            <path d="M8 12h8" />
+            <path d="M12 8v8" />
+          </svg>
+        </button>
+        <button class="numeros" onclick="BorrarTexto()">C</button>
+        <button class="numeros" value="0" onclick="InsertarValor(this.value)">
+          0
+        </button>
+        <button class="simbolos" onclick="InsertarValor('/')">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-circle-slash"
+          >
+            <circle cx="12" cy="12" r="10" />
+            <line x1="9" x2="15" y1="15" y2="9" />
+          </svg>
+        </button>
+        <button class="simbolo-igual" id="igual" onclick="MostrarResultado()">
+          =
+        </button>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
